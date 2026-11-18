@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Database;
 
 namespace WpfApp1
 {
@@ -16,6 +17,8 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly CarContext _context;
+
         public MainWindow()
         {
             InitializeComponent();
