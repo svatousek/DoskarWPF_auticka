@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+
+        <ListBox x:Name="CarList" Width="200" Height="400" Margin="485,17,115,17">
+
+        </ListBox>
+        <Label Content="Značka" HorizontalAlignment="Left" Margin="221,52,0,0" VerticalAlignment="Top"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="224,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="Počet dveří" HorizontalAlignment="Left" Margin="212,224,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="ForBrand" HorizontalAlignment="Left" Margin="186,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ForModel" HorizontalAlignment="Left" Margin="186,163,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ForDoors" HorizontalAlignment="Left" Margin="186,255,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+
+        <Button Content="Create" HorizontalAlignment="Left" Margin="206,305,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="Button_Click"/>
+    </Grid>
+</Window>
