@@ -26,7 +26,22 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                string brand = ForBrand.Text;
+                string model = ForModel.Text;
+                int doorCount = int.Parse(ForDoors.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Invalid input. Please enter valid values.");
+            }
+        }
+        public void Clear()
+        {
+            ForBrand.Text =
+                ForDoors.Text =
+                ForModel.Text = string.Empty;
         }
     }
 }
